@@ -26,6 +26,7 @@ public class MsgPanelHandler : MonoBehaviour
         ScanObject();
     }
 
+
     #region //對外接口
     public string Title
     {
@@ -122,6 +123,7 @@ public class MsgPanelHandler : MonoBehaviour
         ChangeColor.GetComponent<Image>().color = Color.white;
         TextContent.GetComponent<Text>().color = Color.black;
         ButtonYes.GetComponentInChildren<Text>().text = "要不要看太陽";
+        ButtonNo.GetComponentInChildren<Text>().text = "左轉";
         TextContent.GetComponent<Text>().text = "左轉太陽，右轉黑夜";
 
     }
@@ -134,6 +136,7 @@ public class MsgPanelHandler : MonoBehaviour
         ChangeColor.GetComponent<Image>().color = Color.black;
         TextContent.GetComponent<Text>().color = Color.white;
         ButtonNo.GetComponentInChildren<Text>().text = "要不要看月亮";
+        ButtonYes.GetComponentInChildren<Text>().text = "右轉";
         TextContent.GetComponent<Text>().text = "左轉白天，右轉月亮";
     }
 }
